@@ -24,10 +24,13 @@ venv\Scripts\activate
 
 2. Запуск тестов
 Запуск всех тестов
+
 pytest tests/test_ads_api.py -v
 
-Запуск конкретного класса тестов:
+Запуск конкретного класса тестов
+
 pytest tests/test_ads_api.py::TestCreateAd -v
 
-Запуск конкретного тест-кейса:
+Запуск конкретного тест-кейса
+
 pytest tests/test_ads_api.py::TestCreateAd::test_create_ad_with_valid_data -v
