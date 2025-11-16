@@ -17,13 +17,17 @@ API микросервиса объявлений имеет 4 основных 
 
 ## Установка
 
-1. Клонировать репозиторий:
-git clone <repository-url>
-cd <repository-folder>
-
-2. Создать виртуальное окружение
+1. Создать виртуальное окружение
 
 python -m venv venv
 venv\Scripts\activate
 
-3. 
+2. Запуск тестов
+Запуск всех тестов
+pytest tests/test_ads_api.py -v
+
+Запуск конкретного класса тестов:
+pytest tests/test_ads_api.py::TestCreateAd -v
+
+Запуск конкретного тест-кейса:
+pytest tests/test_ads_api.py::TestCreateAd::test_create_ad_with_valid_data -v
