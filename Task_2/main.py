@@ -90,7 +90,7 @@ class TestGetAdById:
     
     def test_get_ad_with_invalid_id_format(self):
         """Проверка получения объявления по некорректному формату ID"""
-        invalid_id = "invalid_id"  # Некорректный формат ID
+        invalid_id = "invalid_id"
         response = requests.get(f"{URL}/ads/{invalid_id}")
         
         assert response.status_code == 400, f"Expected status code 400, got {response.status_code}"
